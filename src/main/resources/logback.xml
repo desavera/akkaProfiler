@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false" debug="false">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%4p] [%d{ISO8601}] [%t] %c{1}: %m%n</pattern>
+        </encoder>
+    </appender>
+    <!-- you can also drop it completely -->
+    <logger name="se.scalablesolutions" level="DEBUG"/>
+    <logger name="akka" level="DEBUG"/>
+    <root level="DEBUG">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

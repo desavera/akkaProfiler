@@ -1,0 +1,2 @@
+sudo docker run -it --expose 8080 --expose 9000 --dns=10.234.80.47 --dns-search=la.ad.b2w --volume `pwd`:/docked registry.atlas.b2w:5000/b2wdigital/vegas-dev /bin/bash
+# sudo docker run -it --expose 8080 --expose 9000 --dns=8.8.8.8  --volume `pwd`:/docked registry.atlas.b2w:5000/b2wdigital/vegas-dev /bin/bash
